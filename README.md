@@ -2,6 +2,9 @@
 This is a small example of a Trino connector plugin. Connectors make your data
 look like tables to Trino, so that you can run SQL queries on your data.
 
+Check the version of Trino from the parent pom in [pom.xml](pom.xml), there may
+be some requirements such as Java 21 that you may need in order to run this.
+
 # Description
 This is the example I wish I had when I was starting to learn about Trino:
 - It has as few dependencies as possible. I want my example to be more clear
@@ -53,14 +56,14 @@ Trino deployment's plugin directory where all the other plugins are at. Then
 set up the catalog properties file for the plugin.
 
 # Developing the Connector
-First, run `ExampleQueryRunner` in the test code. It'll listen on localhost
-port 8080.
+First, run [ExampleQueryRunner](src/test/java/com/secondthorn/trinoexampleconnector/ExampleQueryRunner.java)
+in the test code. It'll listen on localhost port 8080.
 
 Then you can run the [Trino CLI](https://trino.io/docs/current/client/cli.html)
 against it and start running queries.
 
-Also, the `ExampleQueryTest` class has examples of using the
-`ExampleQueryRunner` in JUnit tests.
+Also, the [ExampleQueryTest](src/test/java/com/secondthorn/trinoexampleconnector/ExampleQueryTest.java)
+class has examples of running queries in JUnit tests.
 
 # Sample Queries
 ```
