@@ -69,13 +69,13 @@ class has examples of running queries in JUnit tests.
 ```
 show catalogs;
 
-show schemas from trivial;
+show schemas from example;
 
-show tables from trivial.my_schema;
+show tables from example.my_schema;
 
-show columns from trivial.my_schema.my_table;
+show columns from example.my_schema.my_table;
 
-select * from trivial.my_schema.my_table;
+select * from example.my_schema.my_table;
 
 select name,
        is_raining,
