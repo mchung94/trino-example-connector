@@ -55,6 +55,12 @@ When you build this plugin, use the .zip file it generates and unzip it in the
 Trino deployment's plugin directory where all the other plugins are at. Then
 set up the catalog properties file for the plugin.
 
+For example in the /etc/trino/catalog/ directory, I'd create a file,
+`example.properties`, with the contents:
+```
+connector.name=example_connector
+```
+
 # Developing the Connector
 First, run [ExampleQueryRunner](src/test/java/com/secondthorn/trinoexampleconnector/ExampleQueryRunner.java)
 in the test code. It'll listen on localhost port 8080.
