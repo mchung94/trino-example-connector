@@ -14,7 +14,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <plugin.version>0.1.0</plugin.version>
+        <plugin.version>0.1.1</plugin.version>
         <!--<air.check.skip-license>true</air.check.skip-license>-->
         <!--<air.check.skip-modernizer>true</air.check.skip-modernizer>-->
     </properties>
