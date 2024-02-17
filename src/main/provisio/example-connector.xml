@@ -5,6 +5,9 @@
         <directory path="${basedir}/target">
             <include>${project.artifactId}-${project.version}-services.jar</include>
         </directory>
+        <directory path="${basedir}">
+            <include>VERSION</include>
+        </directory>
     </fileSet>
 
     <archive name="${project.artifactId}-${project.version}-${plugin.version}.zip" />
